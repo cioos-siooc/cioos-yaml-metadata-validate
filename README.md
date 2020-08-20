@@ -12,6 +12,6 @@ Website to validate metadata in yaml:
 
 `npm start`
 
-## Deploy
+## Deploy to Github Pages
 
 `npm run deploy`
