@@ -1,6 +1,8 @@
 # CIOOS YAML Validation website
 
-Website to validate metadaata in yaml.
+<https://cioos-siooc.github.io/cioos-yaml-metadata-validate>
+
+Website to validate metadata in yaml.
 
 # Installation
 
