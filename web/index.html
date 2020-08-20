@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CIOOS YAML Validator</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .line-error {
+      background: #FBC2C4 !important;
+      color: #8a1f11 !important;
+    }
+
+    .hasLine {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid" style="height:80%">
+    <div class="col-md-12">
+      <h3>CIOOS YAML validator</h3>
+
+    </div>
+    <!-- <h5>based on https://standards.iso.org/iso/19115/-3/mds/2.0/mds.xsd</h5> -->
+
+    <div class="col-md-12">
+
+      <div class="row mt-3">
+        <div id="results" style="max-height: 30vh;overflow-y: scroll;"></div>
+      </div>
+
+    </div>
+    <div class="col-md-12">
+
+
+      <div>Paste some YAML to be validateds:</div>
+
+      <div>
+        <textarea id="code" name="xml_data"></textarea>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-sm">
+          <button type="button" class="btn btn-primary" onClick="validator.validateYAML()">Validate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    window.validator = new Validator(document.getElementById("code"));
+  });
+</script>
+
+</html>
