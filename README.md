@@ -8,9 +8,13 @@ Website to validate metadata in yaml:
 
 `npm install`
 
-## Run using dev server
+## Run website using dev server
 
 `npm start`
+
+## Run command line YAML validation
+
+`node test.js web/sample.yaml`
 
 ## Deploy to Github Pages
 

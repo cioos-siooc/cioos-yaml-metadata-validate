@@ -12,7 +12,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "node test.js",
+    "test": "node test.js web/sample.yaml",
     "build": "NODE_ENV=development webpack",
     "build:development": "npm run build",
     "build:production": "NODE_ENV=production webpack",
